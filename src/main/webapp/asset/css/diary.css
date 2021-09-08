@@ -1,0 +1,12 @@
+
+
+
+#home-page #diary #area-title {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 1rem;
+}
+
+#home-page #diary #card-container {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,42 @@
+@import url(bootstrap-customized.css);
+/* Top Navbar */
+
+#top-navbar .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 2px solid var(--gray-300);
+  border-radius: 2.5rem;
+}
+
+#top-navbar .navbar-toggler:hover,
+#top-navbar .navbar-toggler:focus {
+  border: 2px solid var(--gray-500);
+  text-decoration: none;
+}
+
+#top-navbar .nav-link {
+  color: var(--gray-700);
+  font-weight: 700;
+  border-radius: .25rem;
+  background-color: transparent;
+}
+
+#top-navbar .nav-link:hover,
+#top-navbar .nav-link:focus {
+  color: var(--gray-900);
+  background-color: var(--gray-200);
+}
+
+.dropdown-item {
+  color: var(--gray-700);
+  font-weight: 700;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--gray-900);
+  text-decoration: none;
+  background-color: var(--gray-200);
+}

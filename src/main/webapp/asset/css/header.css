@@ -1,0 +1,36 @@
+header .dropdown-toggle::after {
+    content: none;
+}
+
+header .btn {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    padding: .125rem;
+}
+
+header .bi {
+    vertical-align: -0.7em;
+    margin: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+}
+
+header #shoppingCart-button {
+    margin-right: 1rem;
+}
+
+header #user-button a {
+    font-size: .8rem;
+    font-weight: 500 !important;
+    color: var(--gray-600);
+}
+
+header .dropdown-item:hover,
+header .dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: var(--gray-200);
+}

@@ -1,0 +1,37 @@
+/* Banner Carousel */
+#banner-carousel {
+  background: var(--gray-100) !important;
+}
+
+/* Carousel Hero */
+#banner-carousel .carousel-indicators li {
+  margin: -1.5rem .5rem;
+  /* margin-right:.5rem;
+  margin-left:.5rem; */
+  background-color: var(--success);
+  height:.5rem;
+}
+
+#banner-carousel .carousel-control-next i,
+#banner-carousel .carousel-control-prev i {
+  color: var(--gray-600);
+  font-weight:900;
+  font-size: 2.8em !important;
+}
+
+
+#banner-carousel .carousel-control-next:hover,
+#banner-carousel .carousel-control-next:focus {
+  color: var(--gray-900);
+}
+
+#banner-carousel .carousel-control-prev:hover,
+#banner-carousel .carousel-control-prev:focus {
+  color: var(--gray-900);
+}
+
+@media (min-width: 992px) {
+  #banner-carousel .carousel-item {
+    min-height: 30rem !important;
+  }
+}
