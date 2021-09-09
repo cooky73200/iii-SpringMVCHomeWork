@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="zh-tw">
 
@@ -340,12 +340,13 @@
                                         <th scope="row">1</th>
                                         <td>Mark</td>
                                         <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
+                                        <td>@mdo</td> 
+                                    <td>
+                                      <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
+                                      <a href="#" class="btn btn-primary">刪除</a>
+                                    </td>
                                     </tr>
+
                                     <tr>
                                         <th scope="row">2</th>
                                         <td>Jacob</td>
