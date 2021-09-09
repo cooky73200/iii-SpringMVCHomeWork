@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<context:component-scan base-package="tw.iPet">
+	<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+
+	<!-- c3p0連接池 -->
+<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+<property name="driverClass" value="${jdbc.driver}"/>
+<property name="jdbcUrl" value="${jdbc.url}"/>
+<property name="user" value="${jdbc.username}"/>
+<property name="password" value="${jdbc.password}"/>
+<property name="maxPoolSize" value="40"/>
+<property name="minPoolSize" value="1"/>
+<property name="initialPoolSize" value="10"/>
+<property name="maxIdleTime" value="20"/>
+</bean>
+<!-- 配置SessionFactory -->
+<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+<property name="dataSource" ref="dataSource"/>
+<property name="packagesToScan" value="tw.iPet.domain"/>
+<property name="hibernateProperties">
+<props>
+<prop key="hibernate.hbm2dd1.auto">${hibernate.hbm2dd1.auto}</prop>
+<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+<prop key="hibernate.allow_update_outside_transaction">${hibernate.allow_update_outside_transaction}</prop>
+</props>
+</property>
+</bean>
+<!-- 事務管理器配置 -->
+<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+
+<tx:annotation-driven transaction-manager="transactionManager" />
+
+
+
+</beans>
