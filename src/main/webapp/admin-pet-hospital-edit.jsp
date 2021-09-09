@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="zh-tw">
 
@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPet.com - ­Ч§пГ~Ве°|ёк®Ж</title>
+    <title>iPet.com - дї®ж”№зЌёй†«й™ўиі‡ж–™</title>
 
 
     <!-- css -->
@@ -85,15 +85,15 @@
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="user-dropdown">
                                     <li>
-                                        <h6 class="dropdown-header font-weight-bolder">·|­ы¤¤¤Я</h6>
+                                        <h6 class="dropdown-header font-weight-bolder">жњѓе“Ўдё­еїѓ</h6>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">§ЪЄє¤й°O</a></li>
-                                    <li><a class="dropdown-item" href="#">·|­ыёк®ЖєЮІz</a></li>
-                                    <li><a class="dropdown-item" href="#">ЁдҐLҐ\Їа</a></li>
+                                    <li><a class="dropdown-item" href="#">ж€‘зљ„ж—ҐиЁ</a></li>
+                                    <li><a class="dropdown-item" href="#">жњѓе“Ўиі‡ж–™з®Ўзђ†</a></li>
+                                    <li><a class="dropdown-item" href="#">е…¶д»–еЉџиѓЅ</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">µnҐX</a></li>
+                                    <li><a class="dropdown-item" href="#">з™»е‡є</a></li>
                                 </ul>
                             </div>
                             <!-- User Button Ends -->
@@ -123,45 +123,45 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item me-sm-0 me-lg-2" id="home-page">
                                 <a id="homepage" class="nav-link active pl-sm-2" aria-current="page"
-                                    href="home_page.html">­є­¶</a>
+                                    href="home_page.html">й¦–й Ѓ</a>
                             </li>
                             <li class="nav-item dropdown me-sm-0 me-lg-2" id="read-information">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#"
                                     id="dropdown-read-information" data-bs-toggle="dropdown"
-                                    aria-expanded="false">ёк°Tѕ\ЕЄ</a>
+                                    aria-expanded="false">иі‡иЁЉй–±и®Ђ</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-read-information">
-                                    <li><a id="whats-new" class="dropdown-item" href="#">іМ·s®ш®§</a></li>
-                                    <li><a id="health-of-pet" class="dropdown-item" href="#">ГdЄ«°·±d</a></li>
-                                    <li><a id="good-to-share" class="dropdown-item" href="#">¦n±d¤АЁЙ</a></li>
+                                    <li><a id="whats-new" class="dropdown-item" href="#">жњЂж–°ж¶€жЃЇ</a></li>
+                                    <li><a id="health-of-pet" class="dropdown-item" href="#">еЇµз‰©еЃҐеє·</a></li>
+                                    <li><a id="good-to-share" class="dropdown-item" href="#">еҐЅеє·е€†дє«</a></li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item dropdown me-sm-0 me-lg-2" id="adopt-seek">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#" id="dropdown-adopt-seek"
-                                    data-bs-toggle="dropdown" aria-expanded="false">»вѕi / ЁуґM</a>
+                                    data-bs-toggle="dropdown" aria-expanded="false">й й¤Љ / еЌ”е°‹</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-adopt-seek">
-                                    <li><a id="public-adoption" class="dropdown-item" href="#">¤ЅҐЯ»вѕi</a></li>
-                                    <li><a id="general-adoption" class="dropdown-item" href="#">¤@Їл»вѕi</a></li>
-                                    <li><a id="seek" class="dropdown-item" href="#">Ё«ҐўЁуґM</a></li>
+                                    <li><a id="public-adoption" class="dropdown-item" href="#">е…¬з«‹й й¤Љ</a></li>
+                                    <li><a id="general-adoption" class="dropdown-item" href="#">дёЂи€¬й й¤Љ</a></li>
+                                    <li><a id="seek" class="dropdown-item" href="#">иµ°е¤±еЌ”е°‹</a></li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item dropdown me-sm-0 me-lg-2">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#" id="dropdown-shop"
-                                    data-bs-toggle="dropdown" aria-expanded="false">ГdЄ«ҐО«~БК¶R</a>
+                                    data-bs-toggle="dropdown" aria-expanded="false">еЇµз‰©з”Ёе“ЃиіјиІ·</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-shop">
-                                    <li><a id="cat" class="dropdown-item" href="#">їЯ</a></li>
-                                    <li><a id="dog" class="dropdown-item" href="#">ЄЇ</a></li>
-                                    <li><a id="bird" class="dropdown-item" href="#">іѕ</a></li>
-                                    <li><a id="fish" class="dropdown-item" href="#">іЅ</a></li>
-                                    <li><a id="others" class="dropdown-item" href="#">ЁдҐL</a></li>
+                                    <li><a id="cat" class="dropdown-item" href="#">иІ“</a></li>
+                                    <li><a id="dog" class="dropdown-item" href="#">з‹—</a></li>
+                                    <li><a id="bird" class="dropdown-item" href="#">йіҐ</a></li>
+                                    <li><a id="fish" class="dropdown-item" href="#">й­љ</a></li>
+                                    <li><a id="others" class="dropdown-item" href="#">е…¶д»–</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item  me-sm-0 me-lg-2">
-                                <a id="hospital" class="nav-link active pl-sm-2" href="#">°КЄ«Ве°|¬dёЯ</a>
+                                <a id="hospital" class="nav-link active pl-sm-2" href="#">е‹•з‰©й†«й™ўжџҐи©ў</a>
                             </li>
 
                         </ul>
@@ -179,7 +179,7 @@
         </div>
         <!-- Fixed Top Ends  -->
 
-        <!-- ­nµ№¤@­УgapЎA¤ЈµM Banner Carousel ·|іQ Fixed Top »\¦н¤@іЎ¤А -->
+        <!-- и¦Ѓзµ¦дёЂеЂ‹gapпјЊдёЌз„¶ Banner Carousel жњѓиў« Fixed Top и“‹дЅЏдёЂйѓЁе€† -->
 
         <div id="gap" class="gap-lg-120 gap-md-1420 gap-sm-120 gap-120 bg-white"></div>
 
@@ -277,7 +277,7 @@
 
 
 
-        <!-- іoёМ­n¦AҐ[gapЎAЅХѕгЄ©­±µшД±ҐОЎAГC¦в¦Ы¤vїп -->
+        <!-- йЂ™иЈЎи¦Ѓе†ЌеЉ gapпјЊиЄїж•ґз‰€йќўи¦–и¦єз”ЁпјЊйЎЏи‰Іи‡Єе·±йЃё -->
         <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-warning">
 
         </div>
@@ -286,65 +286,65 @@
         <div id="diary" class="bg-warning">
             <div id="diary-container" class="container">
                 <div class="align-items-center justify-content-center pt-5 pb-5">
-                    <h3 id="area-title" class="text-center font-weight-bold">­Ч§пГ~Ве°|ёк®Ж</h3>
+                    <h3 id="area-title" class="text-center font-weight-bold">дї®ж”№зЌёй†«й™ўиі‡ж–™</h3>
                 </div>
                 
                 <form>
                     <div class="container">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">­Ч§п1</label>
+                      <label for="exampleInputEmail1" class="form-label">дї®ж”№1</label>
                       <div class="form-floating">
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>­Ч§п¶µҐШ</option>
-                          <option value="1">Ве°|¦WєЩ</option>
-                          <option value="2">°П°м</option>
-                          <option value="3">¦a§}</option>
-                          <option value="4">№qёЬ</option>
+                          <option selected>дї®ж”№й …з›®</option>
+                          <option value="1">й†«й™ўеђЌзЁ±</option>
+                          <option value="2">еЌЂеџџ</option>
+                          <option value="3">ењ°еќЂ</option>
+                          <option value="4">й›»и©±</option>
                         </select>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">­Ч§п2</label>
+                      <label for="exampleInputEmail1" class="form-label">дї®ж”№2</label>
                       <div class="form-floating">
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>­Ч§п¶µҐШ</option>
-                          <option value="1">Ве°|¦WєЩ</option>
-                          <option value="2">°П°м</option>
-                          <option value="3">¦a§}</option>
-                          <option value="4">№qёЬ</option>
+                          <option selected>дї®ж”№й …з›®</option>
+                          <option value="1">й†«й™ўеђЌзЁ±</option>
+                          <option value="2">еЌЂеџџ</option>
+                          <option value="3">ењ°еќЂ</option>
+                          <option value="4">й›»и©±</option>
                         </select>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">­Ч§п3</label>
+                      <label for="exampleInputEmail1" class="form-label">дї®ж”№3</label>
                       <div class="form-floating">
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>­Ч§п¶µҐШ</option>
-                          <option value="1">Ве°|¦WєЩ</option>
-                          <option value="2">°П°м</option>
-                          <option value="3">¦a§}</option>
-                          <option value="4">№qёЬ</option>
+                          <option selected>дї®ж”№й …з›®</option>
+                          <option value="1">й†«й™ўеђЌзЁ±</option>
+                          <option value="2">еЌЂеџџ</option>
+                          <option value="3">ењ°еќЂ</option>
+                          <option value="4">й›»и©±</option>
                         </select>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">­Ч§п4</label>
+                      <label for="exampleInputEmail1" class="form-label">дї®ж”№4</label>
                       <div class="form-floating">
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>­Ч§п¶µҐШ</option>
-                          <option value="1">Ве°|¦WєЩ</option>
-                          <option value="2">°П°м</option>
-                          <option value="3">¦a§}</option>
-                          <option value="4">№qёЬ</option>
+                          <option selected>дї®ж”№й …з›®</option>
+                          <option value="1">й†«й™ўеђЌзЁ±</option>
+                          <option value="2">еЌЂеџџ</option>
+                          <option value="3">ењ°еќЂ</option>
+                          <option value="4">й›»и©±</option>
                         </select>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">ЅT©w­Ч§п</button>
-                    <a href="Г~Ве°|єЮІz.html" class="btn btn-primary">¦^¤W¤@­¶</a>
+                    <button type="submit" class="btn btn-primary">зўєе®љдї®ж”№</button>
+                    <a href="зЌёй†«й™ўз®Ўзђ†.html" class="btn btn-primary">е›ћдёЉдёЂй Ѓ</a>
                   </div>
                   </form>
               
@@ -379,12 +379,12 @@
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
                 <p class="col-md-4 mb-0 text-light">&copy; 2021 Company, Inc</p>
                 <ul class="nav col-md-8 mt-sm-2 mt-2 justify-content-end d-flex align-items-center">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">­є­¶</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">·|­ы¤¤¤Я</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">°hґ«іf</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">й¦–й Ѓ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">жњѓе“Ўдё­еїѓ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">йЂЂжЏ›иІЁ</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Q&A</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Гц©у§Ъ­М</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Бpµё§Ъ­М</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">й—њж–јж€‘еЂ‘</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">иЃЇзµЎж€‘еЂ‘</a></li>
                 </ul>
             </footer>
         </div>

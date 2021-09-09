@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="zh-tw">
 
@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPet.com - ·s¼WÃ~Âå°|¸ê®Æ</title>
+    <title>iPet.com - ï¿½sï¿½Wï¿½~ï¿½ï¿½|ï¿½ï¿½ï¿½</title>
 
 
     <!-- css -->
@@ -85,15 +85,15 @@
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="user-dropdown">
                                     <li>
-                                        <h6 class="dropdown-header font-weight-bolder">·|­û¤¤¤ß</h6>
+                                        <h6 class="dropdown-header font-weight-bolder">ï¿½|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</h6>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">§Úªº¤é°O</a></li>
-                                    <li><a class="dropdown-item" href="#">·|­û¸ê®ÆºÞ²z</a></li>
-                                    <li><a class="dropdown-item" href="#">¨ä¥L¥\¯à</a></li>
+                                    <li><a class="dropdown-item" href="#">ï¿½Úªï¿½ï¿½ï¿½O</a></li>
+                                    <li><a class="dropdown-item" href="#">ï¿½|ï¿½ï¿½ï¿½ï¿½ÆºÞ²z</a></li>
+                                    <li><a class="dropdown-item" href="#">ï¿½ï¿½Lï¿½\ï¿½ï¿½</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">µn¥X</a></li>
+                                    <li><a class="dropdown-item" href="#">ï¿½nï¿½X</a></li>
                                 </ul>
                             </div>
                             <!-- User Button Ends -->
@@ -123,45 +123,45 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item me-sm-0 me-lg-2" id="home-page">
                                 <a id="homepage" class="nav-link active pl-sm-2" aria-current="page"
-                                    href="home_page.html">­º­¶</a>
+                                    href="home_page.html">ï¿½ï¿½ï¿½ï¿½</a>
                             </li>
                             <li class="nav-item dropdown me-sm-0 me-lg-2" id="read-information">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#"
                                     id="dropdown-read-information" data-bs-toggle="dropdown"
-                                    aria-expanded="false">¸ê°T¾\Åª</a>
+                                    aria-expanded="false">ï¿½ï¿½Tï¿½\Åª</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-read-information">
-                                    <li><a id="whats-new" class="dropdown-item" href="#">³Ì·s®ø®§</a></li>
-                                    <li><a id="health-of-pet" class="dropdown-item" href="#">Ãdª«°·±d</a></li>
-                                    <li><a id="good-to-share" class="dropdown-item" href="#">¦n±d¤À¨É</a></li>
+                                    <li><a id="whats-new" class="dropdown-item" href="#">ï¿½Ì·sï¿½ï¿½ï¿½ï¿½</a></li>
+                                    <li><a id="health-of-pet" class="dropdown-item" href="#">ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½d</a></li>
+                                    <li><a id="good-to-share" class="dropdown-item" href="#">ï¿½nï¿½dï¿½ï¿½ï¿½ï¿½</a></li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item dropdown me-sm-0 me-lg-2" id="adopt-seek">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#" id="dropdown-adopt-seek"
-                                    data-bs-toggle="dropdown" aria-expanded="false">»â¾i / ¨ó´M</a>
+                                    data-bs-toggle="dropdown" aria-expanded="false">ï¿½ï¿½i / ï¿½ï¿½M</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-adopt-seek">
-                                    <li><a id="public-adoption" class="dropdown-item" href="#">¤½¥ß»â¾i</a></li>
-                                    <li><a id="general-adoption" class="dropdown-item" href="#">¤@¯ë»â¾i</a></li>
-                                    <li><a id="seek" class="dropdown-item" href="#">¨«¥¢¨ó´M</a></li>
+                                    <li><a id="public-adoption" class="dropdown-item" href="#">ï¿½ï¿½ï¿½ß»ï¿½i</a></li>
+                                    <li><a id="general-adoption" class="dropdown-item" href="#">ï¿½@ï¿½ï¿½ï¿½i</a></li>
+                                    <li><a id="seek" class="dropdown-item" href="#">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½M</a></li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item dropdown me-sm-0 me-lg-2">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#" id="dropdown-shop"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Ãdª«¥Î«~ÁÊ¶R</a>
+                                    data-bs-toggle="dropdown" aria-expanded="false">ï¿½dï¿½ï¿½ï¿½Î«~ï¿½Ê¶R</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-shop">
-                                    <li><a id="cat" class="dropdown-item" href="#">¿ß</a></li>
-                                    <li><a id="dog" class="dropdown-item" href="#">ª¯</a></li>
-                                    <li><a id="bird" class="dropdown-item" href="#">³¾</a></li>
-                                    <li><a id="fish" class="dropdown-item" href="#">³½</a></li>
-                                    <li><a id="others" class="dropdown-item" href="#">¨ä¥L</a></li>
+                                    <li><a id="cat" class="dropdown-item" href="#">ï¿½ï¿½</a></li>
+                                    <li><a id="dog" class="dropdown-item" href="#">ï¿½ï¿½</a></li>
+                                    <li><a id="bird" class="dropdown-item" href="#">ï¿½ï¿½</a></li>
+                                    <li><a id="fish" class="dropdown-item" href="#">ï¿½ï¿½</a></li>
+                                    <li><a id="others" class="dropdown-item" href="#">ï¿½ï¿½L</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item  me-sm-0 me-lg-2">
-                                <a id="hospital" class="nav-link active pl-sm-2" href="#">°Êª«Âå°|¬d¸ß</a>
+                                <a id="hospital" class="nav-link active pl-sm-2" href="#">ï¿½Êªï¿½ï¿½ï¿½|ï¿½dï¿½ï¿½</a>
                             </li>
 
                         </ul>
@@ -179,7 +179,7 @@
         </div>
         <!-- Fixed Top Ends  -->
 
-        <!-- ­nµ¹¤@­Ógap¡A¤£µM Banner Carousel ·|³Q Fixed Top »\¦í¤@³¡¤À -->
+        <!-- ï¿½nï¿½ï¿½ï¿½@ï¿½ï¿½gapï¿½Aï¿½ï¿½ï¿½M Banner Carousel ï¿½|ï¿½Q Fixed Top ï¿½\ï¿½ï¿½@ï¿½ï¿½ï¿½ï¿½ -->
 
         <div id="gap" class="gap-lg-120 gap-md-1420 gap-sm-120 gap-120 bg-white"></div>
 
@@ -277,7 +277,7 @@
 
 
 
-        <!-- ³o¸Ì­n¦A¥[gap¡A½Õ¾ãª©­±µøÄ±¥Î¡AÃC¦â¦Û¤v¿ï -->
+        <!-- ï¿½oï¿½Ì­nï¿½Aï¿½[gapï¿½Aï¿½Õ¾ãª©ï¿½ï¿½ï¿½ï¿½Ä±ï¿½Î¡Aï¿½Cï¿½ï¿½Û¤vï¿½ï¿½ -->
         <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-warning">
 
         </div>
@@ -286,29 +286,29 @@
         <div id="diary" class="bg-warning">
             <div id="diary-container" class="container">
                 <div class="align-items-center justify-content-center pt-5 pb-5">
-                    <h3 id="area-title" class="text-center font-weight-bold">·s¼WÃ~Âå°|¸ê®Æ</h3>
+                    <h3 id="area-title" class="text-center font-weight-bold">ï¿½sï¿½Wï¿½~ï¿½ï¿½|ï¿½ï¿½ï¿½</h3>
                 </div>
                 
                 <form action="inserthospital">
                     <div class="container">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Âå°|¦WºÙ</label>
-                      <input  class="form-control" id="exampleInputEmail1" name="hospitalName" aria-describedby="emailHelp">
+                      <label for="exampleInputEmail1" class="form-label">ï¿½ï¿½|ï¿½Wï¿½ï¿½</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" name="hospitalName" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">°Ï°ì</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" name="area" aria-describedby="emailHelp">
+                      <label for="exampleInputEmail1" class="form-label">ï¿½Ï°ï¿½</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" name="area" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">¦a§}</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" name="address" aria-describedby="emailHelp">
+                      <label for="exampleInputEmail1" class="form-label">ï¿½aï¿½}</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" name="address" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">¹q¸Ü</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" name="tel" aria-describedby="emailHelp">
+                      <label for="exampleInputEmail1" class="form-label">ï¿½qï¿½ï¿½</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" name="tel" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn btn-primary">¥Zµn</button>
-                    <a href="Ã~Âå°|ºÞ²z.html" class="btn btn-primary">¦^¤W¤@­¶</a>
+                    <button type="submit" class="btn btn-primary">ï¿½Zï¿½n</button>
+                    <a href="ï¿½~ï¿½ï¿½|ï¿½Þ²z.html" class="btn btn-primary">ï¿½^ï¿½Wï¿½@ï¿½ï¿½</a>
                   </div>
                   </form>
               
@@ -343,12 +343,12 @@
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
                 <p class="col-md-4 mb-0 text-light">&copy; 2021 Company, Inc</p>
                 <ul class="nav col-md-8 mt-sm-2 mt-2 justify-content-end d-flex align-items-center">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">­º­¶</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">·|­û¤¤¤ß</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">°h´«³f</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">ï¿½ï¿½ï¿½ï¿½</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">ï¿½|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">ï¿½hï¿½ï¿½ï¿½f</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Q&A</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Ãö©ó§Ú­Ì</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Ápµ¸§Ú­Ì</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">ï¿½ï¿½ï¿½ï¿½Ú­ï¿½</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">ï¿½pï¿½ï¿½ï¿½Ú­ï¿½</a></li>
                 </ul>
             </footer>
         </div>
