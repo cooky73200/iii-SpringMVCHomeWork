@@ -1,0 +1,14 @@
+#home-page #good-to-share #area-title {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 1rem;
+}
+
+#home-page #good-to-share #card-container {
+    display: block;
+    justify-content: center;
+}
+
+#home-page #good-to-share .card {
+    display: block;
+    justify-content: center;
+}

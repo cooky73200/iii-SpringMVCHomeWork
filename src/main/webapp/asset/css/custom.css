@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* div {
+    border: 2px solid red;
+}
+
+nav {
+    border: 2px solid yellow;
+}
+
+a {
+    border: 2px solid pink;
+}
+
+img {
+    border: 2px solid purple;
+}
+
+svg {
+    border: 2px solid green;
+}
+
+ul,
+li {
+    border: 2px solid rgb(218, 16, 184);
+}
+
+form {
+    border: 2px solid cyan;
+}
+
+span {
+    border: 2px solid darkgoldenrod;
+}
+
+button {
+    border: 2px solid rgb(0, 255, 42);
+}
+
+h3{
+    border: 2px solid darkgoldenrod;
+} */
