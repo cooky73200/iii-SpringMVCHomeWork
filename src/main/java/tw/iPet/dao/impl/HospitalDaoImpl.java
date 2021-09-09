@@ -61,32 +61,50 @@ public class HospitalDaoImpl implements HospitalDao {
 	}
 
 	@Override
-	public HospitalPage selHospital(String keyWord) {
+	public HospitalPage selHospital(String keyWord,int currentPage) {
 		String hql = "FROM Hospital p WHERE p.area like :keyWord or p.hospitalName like :keyWord or p.tel like :keyWord";
 		Query<Hospital> query = factory.getCurrentSession().createQuery(hql, Hospital.class);
 		query.setParameter("keyWord", "%" + "台北" + "%");
-		List<Hospital> allHospital = query.list();
+		List<Hospital> hospitalList = query.list();
 
-		HospitalPage hospitalPage = new HospitalPage();
-		hospitalPage.setTotalCount(allHospital.size());
-		int pageCount = hospitalPage.getPageCount();
-		int page = allHospital.size() % pageCount == 0
-				? allHospital.size() / pageCount
-				: (allHospital.size() / pageCount) + 1;
+		return putInHospitalPage(hospitalList,currentPage);
 
-		hospitalPage.setPage(page);
+	}
+
+
+
+	@Override
+	public HospitalPage getAllHospital(int currentPage) {
+		String  hql = "from Hospital";
+		Query<Hospital> query = factory.getCurrentSession().createQuery(hql,Hospital.class);
+		List<Hospital> hospitalList = query.list();
+		return putInHospitalPage(hospitalList,currentPage);
+
+	}
+
+	private HospitalPage putInHospitalPage(List<Hospital> hospitalList,int currentPage) {
+		HospitalPage hPage = new HospitalPage();
+
+		hPage.setTotalCount(hospitalList.size());
+
+		int pageCount = hPage.getPageCount();
+		int page = hospitalList.size() % pageCount == 0
+				? hospitalList.size() / pageCount
+				: (hospitalList.size() / pageCount) + 1;
+		hPage.setPage(page);
 
 		List<Hospital> currentHospital = new ArrayList<>();
 		int initCount = 25 *pageCount;
 		for(int i = 1 ;i<=pageCount;i++) {
-			if(initCount <=allHospital.size()-1) {
-				currentHospital.add(allHospital.get(initCount));
+			if(initCount <=hospitalList.size()-1) {
+				currentHospital.add(hospitalList.get(initCount));
 			}
 			initCount ++;
 		}
-		hospitalPage.setHospitalList(currentHospital);
+		hPage.setHospitalList(currentHospital);
 
-		return hospitalPage;
+		return hPage;
+
 	}
 
 }
