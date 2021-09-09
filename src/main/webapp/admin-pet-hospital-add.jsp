@@ -289,11 +289,11 @@
                     <h3 id="area-title" class="text-center font-weight-bold">新增獸醫院資料</h3>
                 </div>
                 
-                <form action="hospital/inserthospital">
+                <form action="inserthospital">
                     <div class="container">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">醫院名稱</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" name="hospitalName" aria-describedby="emailHelp">
+                      <input  class="form-control" id="exampleInputEmail1" name="hospitalName" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">區域</label>
