@@ -48,7 +48,7 @@ public class HospitalController {
 
 	@GetMapping("/inserthospital")
 	public String insertHospital(Hospital hospital) {
-		service.insertHospital(hospital);
+			service.insertHospital(hospital);
 		return "admin-pet-hospital-edit";
 
 	}
