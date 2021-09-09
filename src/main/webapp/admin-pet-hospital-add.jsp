@@ -289,23 +289,23 @@
                     <h3 id="area-title" class="text-center font-weight-bold">新增獸醫院資料</h3>
                 </div>
                 
-                <form>
+                <form action="">
                     <div class="container">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">醫院名稱</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="hospitalName" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">區域</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="area" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">地址</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="address" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">電話</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="tel" aria-describedby="emailHelp">
                     </div>
                     <button type="submit" class="btn btn-primary">刊登</button>
                     <a href="獸醫院管理.html" class="btn btn-primary">回上一頁</a>
