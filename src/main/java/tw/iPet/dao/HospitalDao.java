@@ -17,7 +17,9 @@ public interface HospitalDao {
 
 	public boolean delHospital(int id);
 
-	public HospitalPage  selHospital(String keyWord);
+	public HospitalPage  selHospital(String keyWord,int currentPage);
+
+	public HospitalPage getAllHospital(int currentPage);
 
 
 

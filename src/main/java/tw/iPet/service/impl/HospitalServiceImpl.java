@@ -44,8 +44,13 @@ public class HospitalServiceImpl implements HospitalService {
 	}
 
 	@Override
-	public HospitalPage  selHospital(String keyWord) {
-		return hospitalDao.selHospital(keyWord);
+	public HospitalPage  selHospital(String keyWord,int currentPage) {
+		return hospitalDao.selHospital(keyWord, currentPage);
+	}
+
+	@Override
+	public HospitalPage getAllHospital(int currentPage) {
+		return hospitalDao.getAllHospital(currentPage);
 	}
 
 }
