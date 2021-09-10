@@ -289,58 +289,30 @@
                     <h3 id="area-title" class="text-center font-weight-bold">修改獸醫院資料</h3>
                 </div>
                 
-                <form>
+                <form action="updatahospital">
                     <div class="container">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">修改1</label>
+                      <label for="exampleInputEmail1" class="form-label">醫院名稱</label>
                       <div class="form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>修改項目</option>
-                          <option value="1">醫院名稱</option>
-                          <option value="2">區域</option>
-                          <option value="3">地址</option>
-                          <option value="4">電話</option>
-                        </select>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">修改2</label>
+                      <label for="exampleInputEmail1" class="form-label">區域</label>
                       <div class="form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>修改項目</option>
-                          <option value="1">醫院名稱</option>
-                          <option value="2">區域</option>
-                          <option value="3">地址</option>
-                          <option value="4">電話</option>
-                        </select>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">修改3</label>
+                      <label for="exampleInputEmail1" class="form-label">地址</label>
                       <div class="form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>修改項目</option>
-                          <option value="1">醫院名稱</option>
-                          <option value="2">區域</option>
-                          <option value="3">地址</option>
-                          <option value="4">電話</option>
-                        </select>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">修改4</label>
+                      <label for="exampleInputEmail1" class="form-label">電話</label>
                       <div class="form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>修改項目</option>
-                          <option value="1">醫院名稱</option>
-                          <option value="2">區域</option>
-                          <option value="3">地址</option>
-                          <option value="4">電話</option>
-                        </select>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <button type="submit" class="btn btn-primary">確定修改</button>

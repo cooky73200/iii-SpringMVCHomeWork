@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPet.com - �s�W�~��|���</title>
+    <title>iPet.com - 新增獸醫院資料</title>
 
 
     <!-- css -->
@@ -85,15 +85,15 @@
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="user-dropdown">
                                     <li>
-                                        <h6 class="dropdown-header font-weight-bolder">�|������</h6>
+                                        <h6 class="dropdown-header font-weight-bolder">會員中心</h6>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">�ڪ���O</a></li>
-                                    <li><a class="dropdown-item" href="#">�|����ƺ޲z</a></li>
-                                    <li><a class="dropdown-item" href="#">��L�\��</a></li>
+                                    <li><a class="dropdown-item" href="#">我的日記</a></li>
+                                    <li><a class="dropdown-item" href="#">會員資料管理</a></li>
+                                    <li><a class="dropdown-item" href="#">其他功能</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">�n�X</a></li>
+                                    <li><a class="dropdown-item" href="#">登出</a></li>
                                 </ul>
                             </div>
                             <!-- User Button Ends -->
@@ -123,45 +123,45 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item me-sm-0 me-lg-2" id="home-page">
                                 <a id="homepage" class="nav-link active pl-sm-2" aria-current="page"
-                                    href="home_page.html">����</a>
+                                    href="home_page.html">首頁</a>
                             </li>
                             <li class="nav-item dropdown me-sm-0 me-lg-2" id="read-information">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#"
                                     id="dropdown-read-information" data-bs-toggle="dropdown"
-                                    aria-expanded="false">��T�\Ū</a>
+                                    aria-expanded="false">資訊閱讀</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-read-information">
-                                    <li><a id="whats-new" class="dropdown-item" href="#">�̷s����</a></li>
-                                    <li><a id="health-of-pet" class="dropdown-item" href="#">�d�����d</a></li>
-                                    <li><a id="good-to-share" class="dropdown-item" href="#">�n�d����</a></li>
+                                    <li><a id="whats-new" class="dropdown-item" href="#">最新消息</a></li>
+                                    <li><a id="health-of-pet" class="dropdown-item" href="#">寵物健康</a></li>
+                                    <li><a id="good-to-share" class="dropdown-item" href="#">好康分享</a></li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item dropdown me-sm-0 me-lg-2" id="adopt-seek">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#" id="dropdown-adopt-seek"
-                                    data-bs-toggle="dropdown" aria-expanded="false">��i / ��M</a>
+                                    data-bs-toggle="dropdown" aria-expanded="false">領養 / 協尋</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-adopt-seek">
-                                    <li><a id="public-adoption" class="dropdown-item" href="#">���߻�i</a></li>
-                                    <li><a id="general-adoption" class="dropdown-item" href="#">�@���i</a></li>
-                                    <li><a id="seek" class="dropdown-item" href="#">������M</a></li>
+                                    <li><a id="public-adoption" class="dropdown-item" href="#">公立領養</a></li>
+                                    <li><a id="general-adoption" class="dropdown-item" href="#">一般領養</a></li>
+                                    <li><a id="seek" class="dropdown-item" href="#">走失協尋</a></li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item dropdown me-sm-0 me-lg-2">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#" id="dropdown-shop"
-                                    data-bs-toggle="dropdown" aria-expanded="false">�d���Ϋ~�ʶR</a>
+                                    data-bs-toggle="dropdown" aria-expanded="false">寵物用品購買</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-shop">
-                                    <li><a id="cat" class="dropdown-item" href="#">��</a></li>
-                                    <li><a id="dog" class="dropdown-item" href="#">��</a></li>
-                                    <li><a id="bird" class="dropdown-item" href="#">��</a></li>
-                                    <li><a id="fish" class="dropdown-item" href="#">��</a></li>
-                                    <li><a id="others" class="dropdown-item" href="#">��L</a></li>
+                                    <li><a id="cat" class="dropdown-item" href="#">貓</a></li>
+                                    <li><a id="dog" class="dropdown-item" href="#">狗</a></li>
+                                    <li><a id="bird" class="dropdown-item" href="#">鳥</a></li>
+                                    <li><a id="fish" class="dropdown-item" href="#">魚</a></li>
+                                    <li><a id="others" class="dropdown-item" href="#">其他</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item  me-sm-0 me-lg-2">
-                                <a id="hospital" class="nav-link active pl-sm-2" href="#">�ʪ���|�d��</a>
+                                <a id="hospital" class="nav-link active pl-sm-2" href="#">動物醫院查詢</a>
                             </li>
 
                         </ul>
@@ -179,7 +179,7 @@
         </div>
         <!-- Fixed Top Ends  -->
 
-        <!-- �n���@��gap�A���M Banner Carousel �|�Q Fixed Top �\��@���� -->
+        <!-- 要給一個gap，不然 Banner Carousel 會被 Fixed Top 蓋住一部分 -->
 
         <div id="gap" class="gap-lg-120 gap-md-1420 gap-sm-120 gap-120 bg-white"></div>
 
@@ -277,7 +277,7 @@
 
 
 
-        <!-- �o�̭n�A�[gap�A�վ㪩����ı�ΡA�C��ۤv�� -->
+        <!-- 這裡要再加gap，調整版面視覺用，顏色自己選 -->
         <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-warning">
 
         </div>
@@ -286,29 +286,29 @@
         <div id="diary" class="bg-warning">
             <div id="diary-container" class="container">
                 <div class="align-items-center justify-content-center pt-5 pb-5">
-                    <h3 id="area-title" class="text-center font-weight-bold">�s�W�~��|���</h3>
+                    <h3 id="area-title" class="text-center font-weight-bold">新增獸醫院資料</h3>
                 </div>
                 
                 <form action="inserthospital">
                     <div class="container">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">��|�W��</label>
+                      <label for="exampleInputEmail1" class="form-label">醫院名稱</label>
                       <input type="text" class="form-control" id="exampleInputEmail1" name="hospitalName" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">�ϰ�</label>
+                      <label for="exampleInputEmail1" class="form-label">區域</label>
                       <input type="text" class="form-control" id="exampleInputEmail1" name="area" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">�a�}</label>
+                      <label for="exampleInputEmail1" class="form-label">地址</label>
                       <input type="text" class="form-control" id="exampleInputEmail1" name="address" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">�q��</label>
+                      <label for="exampleInputEmail1" class="form-label">電話</label>
                       <input type="text" class="form-control" id="exampleInputEmail1" name="tel" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn btn-primary">�Z�n</button>
-                    <a href="�~��|�޲z.html" class="btn btn-primary">�^�W�@��</a>
+                    <button type="submit" class="btn btn-primary">刊登</button>
+                    <a href="獸醫院管理.html" class="btn btn-primary">回上一頁</a>
                   </div>
                   </form>
               
@@ -343,12 +343,12 @@
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
                 <p class="col-md-4 mb-0 text-light">&copy; 2021 Company, Inc</p>
                 <ul class="nav col-md-8 mt-sm-2 mt-2 justify-content-end d-flex align-items-center">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">����</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">�|������</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">�h���f</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">首頁</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">會員中心</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">退換貨</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Q&A</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">����ڭ�</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">�p���ڭ�</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">關於我們</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">聯絡我們</a></li>
                 </ul>
             </footer>
         </div>

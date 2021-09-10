@@ -41,7 +41,61 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
+
 </head>
+<script>
+    var s1 =${"#s1"}.val();
+    
+    var indexPage=1;
+    $("#b1").click(function(){
+        load(indexPage);
+    })
+    
+    function change(page){
+    	indexPage = page;
+    	load(indexPage);
+    }
+    
+
+    
+    function load(indexPage){
+        $.ajax({
+           type:'post',
+           url:'/product/queryByPage/'+s1+"&"+indexPage,
+           dataType:'JSON',
+//            data:{keyword:"台北",page:"1"},
+	
+           contentType:'application/json',
+           success: function(data){                
+                var json = JSON.stringify(data, null, 4);
+                console.log('success:' + json);
+
+                var jsonArray = JSON.parse(json);
+                $('#t1').empty("");
+                if(json==null){
+                   $('#t1').prepend('<tr><td colspan="2">No Result</td></tr>');
+                }else{
+                   var table = $('#t1');
+                   table.append("<tr id='ptitle'><th>醫院名稱</th><th>地址</th><th>區域</th><th>電話</th><th>編輯</th></tr>");
+                   $.each(jsonArray, function(i,n){
+                	   
+                       var tr = "<tr align='center'>" + "<td>" + n.hospitalName + "</td>" +
+                                "<td>" + n.address + "</td>" + "<td>" + n.area + "</td>" +
+                                "<td>" + n.tel + "</td>" +"<td>" +
+                                '<a href="admin-pet-hospital-edit.html" class="btn btn-primary">修改</a>'+ 
+                                 '<a class="btn btn-primary">刪除</a>' + "</td>" +
+                                "</tr>";
+                       table.append(tr);
+                   });
+                }                
+           },
+           error: function(){
+        	   console.log('error');
+           }
+        })
+    }
+</script>
+
 
 <body>
     <div id="admin-pet-hospital">
@@ -167,8 +221,8 @@
                         </ul>
 
                         <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+                            <input id="s1" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button id="b1" class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
                         </form>
                     </div>
                     <!-- Hamburger Menu Ends -->
@@ -324,139 +378,160 @@
                   
                   <section class="bg-light">
                     <div class="container my-4">
-                        <div class="row text-center ">
-                            <table class="table table-striped ">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Number</th>
-                                        <th scope="col">醫院名稱</th>
-                                        <th scope="col">電話</th>
-                                        <th scope="col">地址</th>
-                                        <th scope="col">編輯</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td> 
-                                    <td>
-                                      <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                      <a href="#" class="btn btn-primary">刪除</a>
-                                    </td>
-                                    </tr>
+                        <div  class="row text-center ">
+                        	
+                            <table id="t1" class="table table-striped ">
+<!--                                 <thead> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="col"></th> -->
+<!--                                         <th scope="col"></th> -->
+<!--                                         <th scope="col"></th> -->
+<!--                                         <th scope="col"></th> -->
+<!--                                         <th scope="col"></th> -->
+<!--                                     </tr> -->
+<!--                                 </thead> -->
+<!--                                 <tbody> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">1</th> -->
+<!--                                         <td></td> -->
+<!--                                         <td></td> -->
+<!--                                         <td></td>  -->
+<!--                                     <td> -->
+<!--                                       <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                       <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                     </td> -->
+<!--                                     </tr> -->
 
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">6</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">7</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">8</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">9</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                          <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
-                                          <a href="#" class="btn btn-primary">刪除</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
+<!--                                     <tr> -->
+<!--                                         <th scope="row">2</th> -->
+<!--                                         <td></td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">3</th> -->
+<!--                                         <td>Jacob</td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">4</th> -->
+<!--                                         <td>Jacob</td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">5</th> -->
+<!--                                         <td>Jacob</td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">5</th> -->
+<!--                                         <td>Jacob</td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">6</th> -->
+<!--                                         <td>Jacob</td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">7</th> -->
+<!--                                         <td>Jacob</td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">8</th> -->
+<!--                                         <td>Jacob</td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">9</th> -->
+<!--                                         <td>Jacob</td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                     <tr> -->
+<!--                                         <th scope="row">10</th> -->
+<!--                                         <td>Jacob</td> -->
+<!--                                         <td>Thornton</td> -->
+<!--                                         <td>@fat</td> -->
+<!--                                         <td> -->
+<!--                                           <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a> -->
+<!--                                           <a href="#" class="btn btn-primary">刪除</a> -->
+<!--                                         </td> -->
+<!--                                     </tr> -->
+<!--                                 </tbody> -->
                             </table>
                         </div>
                     </div>
                   </section>
                   
-                      <div class="container">
-                        <div class="row">
-                            <div class="col pt-5">
-                              <ul class="pagination justify-context-center">
-                                <!-- <li class="page-item"><a class="page-link" href="領養.html">Previous</a></li> -->
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                <li class="page-item"><a class="page-link" href="管理者頁面.html">回管理者頁面</a></li>
-                              </ul>
-                            </div>
-                            </div>
-                        </div>
+<!--                       <div class="container"> -->
+<!--                         <div class="row"> -->
+<!--                             <div class="col pt-5"> -->
+<!--                               <ul class="pagination justify-context-center"> -->
+<!--                                 <li class="page-item"><a class="page-link" href="領養.html">Previous</a></li> -->
+<!--                                 <li class="page-item"><a class="page-link" href="#">1</a></li> -->
+<!--                                 <li class="page-item"><a class="page-link" href="#">2</a></li> -->
+<!--                                 <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+<!--                                 <li class="page-item"><a class="page-link" href="#">Next</a></li> -->
+<!--                                 <li class="page-item"><a class="page-link" href="管理者頁面.html">回管理者頁面</a></li> -->
+<!--                               </ul> -->
+<!--                             </div> -->
+<!--                             </div> -->
+<!--                         </div> -->
+					<tr>
+       					
+       					<td colspan="3" align="right">
+          				<c:forEach var="i" begin="1" end="${HospitalPage.Page}" step="1">
+              				<button id="myPage" value="${i}" onclick="change(${i})">${i}</button>
+          				</c:forEach>
+          				
+       					</td>
+    				</tr>
+    				
                       </div>
                     </div>
                   </div>
