@@ -13,7 +13,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+@Data @Builder @NoArgsConstructor @AllArgsConstructor
 @Entity
 @Table(name = "hospital")
 @Component
@@ -30,43 +30,6 @@ public class Hospital {
 	private String area;
 	@Column(name="TEL")
 	private String tel;
-
-
-	public Hospital() {
-
-	}
-	public int getHospitalId() {
-		return hospitalId;
-	}
-	public void setHospitalId(int hospitalId) {
-		this.hospitalId = hospitalId;
-	}
-	public String getHospitalName() {
-		return hospitalName;
-	}
-	public void setHospitalName(String hospitalName) {
-		this.hospitalName = hospitalName;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public String getArea() {
-		return area;
-	}
-	public void setArea(String area) {
-		this.area = area;
-	}
-	public String getTel() {
-		return tel;
-	}
-	public void setTel(String tel) {
-		this.tel = tel;
-	}
-
-
 
 
 

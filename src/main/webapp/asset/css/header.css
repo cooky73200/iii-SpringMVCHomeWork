@@ -3,24 +3,39 @@ header .dropdown-toggle::after {
 }
 
 header .btn {
-    width: fit-content;
-    height: fit-content;
     border-radius: 50%;
-    padding: .125rem;
+    padding: 0;
+    margin-left: 1rem;
+
 }
 
-header .bi {
-    vertical-align: -0.7em;
-    margin: 0;
+#header #memberCenter-btn-icon-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+}
+
+
+#header #shoppingCart-btn-icon-container{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+header .bi {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     fill: currentColor;
 }
 
-header #shoppingCart-button {
-    margin-right: 1rem;
-}
 
 header #user-button a {
     font-size: .8rem;

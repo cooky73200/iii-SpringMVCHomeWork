@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -13,7 +14,6 @@ import tw.iPet.domain.HospitalPage;
 import tw.iPet.service.HospitalService;
 
 @Controller
-@RequestMapping("/hospital")
 public class HospitalController {
 	@Autowired
 	private HospitalService service;
@@ -46,10 +46,11 @@ public class HospitalController {
 	}
 
 
-	@GetMapping("/inserthospital")
+	@PostMapping("/inserthospital")
 	public String insertHospital(Hospital hospital) {
+		System.out.println(hospital);
 			service.insertHospital(hospital);
-		return "admin-pet-hospital-edit";
+		return "admin-pet-hospital";
 
 	}
 

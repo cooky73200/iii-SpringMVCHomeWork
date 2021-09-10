@@ -1,0 +1,58 @@
+
+
+
+    .bgbox {
+        background-color: #F5C199;
+      }
+      .bgbox1 {
+        border-radius: 20px 20px 20px 20px;
+      }
+
+      .bgc{
+            background-color: rgb(253,245,238);
+            border-radius: 20px 20px 20px 20px;
+          }
+
+       .boxserchm {
+            background-color: rgb(163, 203, 219);
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        .numberwidth {
+          width:80px;
+        }
+
+        .productimg {
+          width: 100px;
+          display: inline;
+        }
+
+
+        .table th, .table td {
+          padding: 0.75rem;
+          vertical-align:middle;
+          border-top: 1px solid #dee2e6;
+      }
+
+        #product{
+          width: 100px;
+        }
+          
+        #div2 label.error {
+        font-size: 1em;
+        color: #F00;
+        font-weight: bold;
+        display: block;
+        margin-left: 215px;
+        }
+
+        #div2  input.error, #div2 select.error  {
+          background: #FFA9B8;
+          border: 1px solid red;
+        }
+
+        .artcolor{
+          box-shadow:3px 3px 5px 6px #cccccc;
+        }
+
+       

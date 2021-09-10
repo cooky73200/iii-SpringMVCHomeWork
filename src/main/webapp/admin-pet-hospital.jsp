@@ -289,10 +289,10 @@
                     <h3 id="area-title" class="text-center font-weight-bold">新增</h3>
                 </div>
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <a href="新增獸醫院資料.html" class="btn btn-primary">新增資料</a>
+                    <a href="admin-pet-hospital-add.jsp" class="btn btn-primary">新增資料</a>
                   </div>
             </div>
-        </div> 
+        </div>
 
         <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-warning"></div>
 
@@ -319,9 +319,9 @@
                         </form>
                     </div>
                   </div>
-                  
+
                   <p></p>
-                  
+
                   <section class="bg-light">
                     <div class="container my-4">
                         <div class="row text-center ">
@@ -340,7 +340,7 @@
                                         <th scope="row">1</th>
                                         <td>Mark</td>
                                         <td>Otto</td>
-                                        <td>@mdo</td> 
+                                        <td>@mdo</td>
                                     <td>
                                       <a href="修改獸醫院資料.html" class="btn btn-primary">修改</a>
                                       <a href="#" class="btn btn-primary">刪除</a>
@@ -442,7 +442,7 @@
                         </div>
                     </div>
                   </section>
-                  
+
                       <div class="container">
                         <div class="row">
                             <div class="col pt-5">
@@ -493,7 +493,7 @@
     <!-- Back to Top Button Starts -->
 
     <!-- Back to Top Button Ends -->
-    
+
 </body>
 
 </html>

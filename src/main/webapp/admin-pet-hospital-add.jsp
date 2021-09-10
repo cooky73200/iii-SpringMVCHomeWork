@@ -7,13 +7,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPet.com - �s�W�~��|���</title>
+    <title>iPet.com - 新增獸醫院資料</title>
 
 
     <!-- css -->
-    <!-- <link rel="stylesheet" href="vendor/bootstrap-5.1.0-dist/css/bootstrap.csss"> -->
+    <link rel="stylesheet" href="vendor/bootstrap-5.1.0-dist/css/bootstrap.csss">
     <link rel="stylesheet" href="vendor/bootstrap-5.1.0-dist/css/bootstrap-grid.css">
-    <!-- <link rel="stylesheet" href="vendor/zay_shop/css/templatemo.css"> -->
+    <link rel="stylesheet" href="vendor/zay_shop/css/templatemo.css">
     <link rel="stylesheet" href="asset/css/bootstrap-customized.css">
     <link rel="stylesheet" href="asset/css/custom.css">
     <link rel="stylesheet" href="asset/css/header.css">
@@ -21,8 +21,9 @@
     <link rel="stylesheet" href="asset/css/carousel.css">
     <link rel="stylesheet" href="asset/css/gap.css">
     <link rel="stylesheet" href="asset/css/diary.css">
-    <link rel="stylesheet" href="asset/css/good-to-share.css">
+    <link rel="stylesheet" href="asset/css/good-sharing.css">
     <link rel="stylesheet" href="asset/css/footer.css">
+    <link rel="stylesheet" href="asset/css/backtotop.css">
 
     <!-- js -->
     <script src="vendor/bootstrap-5.1.0-dist/js/bootstrap.bundle.js"></script>
@@ -32,6 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
+    <script src="asset/js/backtotop.js"></script>
 
     <!-- fonts -->
     <link rel="stylesheet"
@@ -54,22 +56,24 @@
 
                         <!-- Brand Label Starts -->
                         <a id="brand-label" class="navbar-brand text-white d-inline-flex align-items-center py-0"
-                            href="home_page.html"><img id="brand-logo" class="me-2"
+                            href="home-page.html"><img id="brand-logo" class="me-2"
                                 src="asset/images/brand/favicon.png" />iPet.com</a>
                         <!-- Brand Label Ends -->
 
 
-                        <!-- Shopping Cart Button & User Button Starts -->
-                        <div class="text-end d-inline-flex">
+                        <!-- Shopping Cart Button & User Button Start -->
+                        <div class="d-inline-flex justify-content-end align-items-center" id="buttons-container">
 
                             <!-- Shopping Cart Button Starts -->
                             <div id="shoppingCart-button">
-                                <button class="btn btn-light" type="button"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="16" height="16" fill="currentColor" class="bi bi-bag-fill"
-                                        viewBox="0 0 16 16">
+                                <a id="shoppingCart-btn-icon-container" class="btn btn-light"
+                                    href="shop-shopping-cart.html" role="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-bag-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z" />
-                                    </svg></button>
+                                    </svg>
+                                </a>
                             </div>
                             <!-- Shopping Cart Button Ends -->
 
@@ -77,28 +81,25 @@
                             <div id="user-button" class="dropdown">
                                 <button class="btn btn-light dropdown-toggle" type="button" id="user-dropdown"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                                        class="bi bi-person-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                    </svg>
+                                    <section id="memberCenter-btn-icon-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                        </svg>
+                                    </section>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="user-dropdown">
-                                    <li>
-                                        <h6 class="dropdown-header font-weight-bolder">�|������</h6>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">�ڪ���O</a></li>
-                                    <li><a class="dropdown-item" href="#">�|����ƺ޲z</a></li>
-                                    <li><a class="dropdown-item" href="#">��L�\��</a></li>
+                                    <li><a class="dropdown-item" href="member-center.html">會員中心</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">�n�X</a></li>
+                                    <li><a class="dropdown-item" href="member-login.html">登入</a></li>
                                 </ul>
                             </div>
                             <!-- User Button Ends -->
                         </div>
-                        <!-- Shopping Cart & User Button Ends -->
+                        <!-- Shopping Cart & User Button End -->
 
                     </div>
                 </div>
@@ -121,47 +122,46 @@
             justify-content-between" id="top-navbar-navs">
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item me-sm-0 me-lg-2" id="home-page">
-                                <a id="homepage" class="nav-link active pl-sm-2" aria-current="page"
-                                    href="home_page.html">����</a>
+                            <li class="nav-item me-sm-0 me-lg-2" id="item-homepage">
+                                <a id="link-homepage" class="nav-link active pl-sm-2" aria-current="page"
+                                    href="home-page.html">首頁</a>
                             </li>
-                            <li class="nav-item dropdown me-sm-0 me-lg-2" id="read-information">
+                            <li class="nav-item dropdown me-sm-0 me-lg-2" id="item-read-information">
                                 <a class="nav-link active dropdown-toggle pl-sm-2" href="#"
                                     id="dropdown-read-information" data-bs-toggle="dropdown"
-                                    aria-expanded="false">��T�\Ū</a>
+                                    aria-expanded="false">資訊閱讀</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-read-information">
-                                    <li><a id="whats-new" class="dropdown-item" href="#">�̷s����</a></li>
-                                    <li><a id="health-of-pet" class="dropdown-item" href="#">�d�����d</a></li>
-                                    <li><a id="good-to-share" class="dropdown-item" href="#">�n�d����</a></li>
+                                    <li><a id="link-whats-new" class="dropdown-item disabled"
+                                            href="whats-new.html">最新消息</a></li>
+                                    <li><a id="link-read-information-diary" class="dropdown-item"
+                                            href="read-information-diary.html">領養日記</a></li>
+                                    <li><a id="link-good-sharing" class="dropdown-item disabled"
+                                            href="good-sharing.html">好康分享</a></li>
                                 </ul>
                             </li>
 
 
-                            <li class="nav-item dropdown me-sm-0 me-lg-2" id="adopt-seek">
-                                <a class="nav-link active dropdown-toggle pl-sm-2" href="#" id="dropdown-adopt-seek"
-                                    data-bs-toggle="dropdown" aria-expanded="false">��i / ��M</a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown-adopt-seek">
-                                    <li><a id="public-adoption" class="dropdown-item" href="#">���߻�i</a></li>
-                                    <li><a id="general-adoption" class="dropdown-item" href="#">�@���i</a></li>
-                                    <li><a id="seek" class="dropdown-item" href="#">������M</a></li>
+                            <li class="nav-item dropdown me-sm-0 me-lg-2" id="item-adoption-missing">
+                                <a class="nav-link active dropdown-toggle pl-sm-2" href="#"
+                                    id="dropdown-adoption-missing" data-bs-toggle="dropdown" aria-expanded="false">領養 /
+                                    協尋</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-adoption-missing">
+                                    <li><a id="link-public-adoption" class="dropdown-item"
+                                            href="adoption-public-adoption.html">公立領養</a></li>
+                                    <li><a id="link-general-adoption" class="dropdown-item"
+                                            href="adoption-general-adoption.html">一般領養</a></li>
+                                    <li><a id="link-missing" class="dropdown-item" href="missing.html">走失協尋</a></li>
                                 </ul>
                             </li>
 
-
-                            <li class="nav-item dropdown me-sm-0 me-lg-2">
-                                <a class="nav-link active dropdown-toggle pl-sm-2" href="#" id="dropdown-shop"
-                                    data-bs-toggle="dropdown" aria-expanded="false">�d���Ϋ~�ʶR</a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown-shop">
-                                    <li><a id="cat" class="dropdown-item" href="#">��</a></li>
-                                    <li><a id="dog" class="dropdown-item" href="#">��</a></li>
-                                    <li><a id="bird" class="dropdown-item" href="#">��</a></li>
-                                    <li><a id="fish" class="dropdown-item" href="#">��</a></li>
-                                    <li><a id="others" class="dropdown-item" href="#">��L</a></li>
-                                </ul>
+                            <li class="nav-item me-sm-0 me-lg-2" id="item-shop">
+                                <a id="link-shop" class="nav-link active pl-sm-2" aria-current="page"
+                                    href="shop.html">寵物用品購買</a>
                             </li>
 
-                            <li class="nav-item  me-sm-0 me-lg-2">
-                                <a id="hospital" class="nav-link active pl-sm-2" href="#">�ʪ���|�d��</a>
+                            <li class="nav-item  me-sm-0 me-lg-2" id="item-pet-hospital">
+                                <a id="link-pet-hospital" class="nav-link active pl-sm-2"
+                                    href="pet-hospital.html">寵物醫院查詢</a>
                             </li>
 
                         </ul>
@@ -179,7 +179,8 @@
         </div>
         <!-- Fixed Top Ends  -->
 
-        <!-- �n���@��gap�A���M Banner Carousel �|�Q Fixed Top �\��@���� -->
+
+        <!-- 要給一個gap，不然 Banner Carousel 會被 Fixed Top 蓋住一部分 -->
 
         <div id="gap" class="gap-lg-120 gap-md-1420 gap-sm-120 gap-120 bg-white"></div>
 
@@ -277,7 +278,7 @@
 
 
 
-        <!-- �o�̭n�A�[gap�A�վ㪩����ı�ΡA�C��ۤv�� -->
+        <!-- 這裡要再加gap，調整版面視覺用，顏色自己選 -->
         <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-warning">
 
         </div>
@@ -286,53 +287,57 @@
         <div id="diary" class="bg-warning">
             <div id="diary-container" class="container">
                 <div class="align-items-center justify-content-center pt-5 pb-5">
-                    <h3 id="area-title" class="text-center font-weight-bold">�s�W�~��|���</h3>
+                    <h3 id="area-title" class="text-center font-weight-bold">新增獸醫院資料</h3>
                 </div>
-                
-                <form action="inserthospital">
+
+                <form action="inserthospital" method="post">
                     <div class="container">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">��|�W��</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name="hospitalName" aria-describedby="emailHelp">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">醫院名稱</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="hospitalName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">區域</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="area">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">地址</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">電話</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="tel">
+                        </div>
+                        <button type="submit" class="btn btn-primary">刊登</button>
+                        <a href="admin-pet-hospital.jsp" class="btn btn-primary">回上一頁</a>
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">�ϰ�</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name="area" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">�a�}</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name="address" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">�q��</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name="tel" aria-describedby="emailHelp">
-                    </div>
-                    <button type="submit" class="btn btn-primary">�Z�n</button>
-                    <a href="�~��|�޲z.html" class="btn btn-primary">�^�W�@��</a>
-                  </div>
-                  </form>
-              
-                  </div>
-                </div>
-              </div>
-              </div>
+                </form>
 
             </div>
-        </div> 
+        </div>
+    </div>
+    </div>
 
-        <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-warning"></div>
+    </div>
+    </div>
 
-        <!-- <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-danger"></div> -->
+    <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-warning"></div>
 
-
-        <!-- Read Information - Diary Ends -->
-
-        <!-- Read Information - Good to Share Starts -->
+    <!-- <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-danger"></div> -->
 
 
-        
-        <!-- Read Information - Good to Share Ends -->
-        <!-- <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-danger"></div>
+    <!-- Read Information - Diary Ends -->
+
+    <!-- Read Information - Good to Share Starts -->
+
+
+
+    <!-- Read Information - Good to Share Ends -->
+    <!-- <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-danger"></div>
     </div> -->
 
 
@@ -343,17 +348,19 @@
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
                 <p class="col-md-4 mb-0 text-light">&copy; 2021 Company, Inc</p>
                 <ul class="nav col-md-8 mt-sm-2 mt-2 justify-content-end d-flex align-items-center">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">����</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">�|������</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">�h���f</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Q&A</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">����ڭ�</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">�p���ڭ�</a></li>
+                    <li class="nav-item"><a href="home-page.html" class="nav-link px-2 text-light">首頁</a></li>
+                    <li class="nav-item"><a href="member-center.html" class="nav-link px-2 text-light">會員中心</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light disabled">退換貨</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light disabled">Q&A</a></li>
+                    <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-light disabled">關於我們</a></li>
+                    <li class="nav-item"><a href="contact-us.html" class="nav-link px-2 text-light disabled">聯絡我們</a>
+                    </li>
                 </ul>
             </footer>
         </div>
     </div>
     <!-- Footer Ends -->
+
 
     <!-- Chatting Room Starts -->
 
@@ -361,8 +368,19 @@
 
 
     <!-- Back to Top Button Starts -->
-
+    <div class="col-12 d-inline-flex justify-content-end fixed-bottom pb-3">
+        <div id="backtotop-button-container" class="align-items-center justify-content-center">
+            <a id="backtotop" class="btn btn-dark" href="#top" role="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                </svg>
+            </a>
+        </div>
+    </div>
     <!-- Back to Top Button Ends -->
-    
+
 </body>
+
 </html>

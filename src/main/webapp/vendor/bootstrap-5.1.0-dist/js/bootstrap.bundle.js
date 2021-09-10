@@ -5978,7 +5978,7 @@
    */
 
 
-  // defineJQueryPlugin(Tooltip);
+  defineJQueryPlugin(Tooltip);
 
   /**
    * --------------------------------------------------------------------------

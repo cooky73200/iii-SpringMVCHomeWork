@@ -1,0 +1,61 @@
+
+.checkout {
+    background-color: #F5C199;
+}
+
+.checkoutlist {
+    box-shadow:3px 3px 5px 6px #cccccc;
+    background-color:white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+#process2{
+    width: 25px;
+    margin:auto
+}
+
+#process3{
+    width: 25px;
+    margin:auto;
+    display: block;
+}
+
+#process4{
+    width: 25px;
+    margin:auto;
+    display: block;
+}
+
+#process5{
+    width: 25px;
+    margin:auto
+}
+
+.boxserchm {
+    background-color: rgb(163, 203, 219);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.billbgc {
+    background-color: rgb(253,245,238);
+    border-top-style:outset;
+    border-top-color:brown;
+    border-top-width:10px;
+    padding:5px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.billbgc1{
+    border-bottom-style:dashed;
+    border-bottom-color:#FFAC55;
+    padding:5px;
+}        
+
+#credit-cards {
+    width: 20%;
+}
+
+#package {
+    width:100px;
+}
