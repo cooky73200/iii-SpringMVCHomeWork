@@ -13,7 +13,7 @@ public interface HospitalDao {
 
 	public List<Hospital> checkHospital(Hospital hospital);
 
-	public boolean upHospital(Hospital hospital);
+	public void upHospital(Hospital hospital);
 
 	public boolean delHospital(int id);
 

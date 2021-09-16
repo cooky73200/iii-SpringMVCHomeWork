@@ -12,7 +12,7 @@ public interface HospitalService {
 
 	public boolean insertHospital(Hospital hospital);
 
-	public boolean upHospital(Hospital hospital);
+	public void upHospital(Hospital hospital);
 
 	public boolean delHospital(int id);
 

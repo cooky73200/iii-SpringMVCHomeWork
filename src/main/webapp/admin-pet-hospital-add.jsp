@@ -39,7 +39,12 @@
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script type="text/javascript">
 
+
+
+
+</script>
 
 </head>
 
@@ -288,8 +293,8 @@
                 <div class="align-items-center justify-content-center pt-5 pb-5">
                     <h3 id="area-title" class="text-center font-weight-bold">新增獸醫院資料</h3>
                 </div>
-                
-                <form action="inserthospital">
+
+                <form action="inserthospital " method="post">
                     <div class="container">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">醫院名稱</label>
@@ -308,17 +313,17 @@
                       <input type="text" class="form-control" id="exampleInputEmail1" name="tel" aria-describedby="emailHelp">
                     </div>
                     <button type="submit" class="btn btn-primary">刊登</button>
-                    <a href="獸醫院管理.html" class="btn btn-primary">回上一頁</a>
+                    <a  href="admin-pet-hospital.jsp" class="btn btn-primary">回上一頁</a>
                   </div>
                   </form>
-              
+
                   </div>
                 </div>
               </div>
               </div>
 
             </div>
-        </div> 
+        </div>
 
         <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-warning"></div>
 
@@ -330,7 +335,7 @@
         <!-- Read Information - Good to Share Starts -->
 
 
-        
+
         <!-- Read Information - Good to Share Ends -->
         <!-- <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-danger"></div>
     </div> -->
@@ -363,6 +368,6 @@
     <!-- Back to Top Button Starts -->
 
     <!-- Back to Top Button Ends -->
-    
+
 </body>
 </html>

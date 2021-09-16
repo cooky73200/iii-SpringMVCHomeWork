@@ -18,6 +18,7 @@ public class HospitalPage {
 	private int page;
 	private int totalCount;
 	private List<Hospital> hospitalList;
+	private int currentPage;
 
 
 

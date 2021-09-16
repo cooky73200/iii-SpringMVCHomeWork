@@ -33,8 +33,8 @@ public class HospitalServiceImpl implements HospitalService {
 	}
 
 	@Override
-	public boolean upHospital(Hospital hospital) {
-		return hospitalDao.upHospital(hospital);
+	public void upHospital(Hospital hospital) {
+		 hospitalDao.upHospital(hospital);
 	}
 
 	@Override
@@ -45,11 +45,13 @@ public class HospitalServiceImpl implements HospitalService {
 
 	@Override
 	public HospitalPage  selHospital(String keyWord,int currentPage) {
+		currentPage= currentPage== 0 ? 1:currentPage;
 		return hospitalDao.selHospital(keyWord, currentPage);
 	}
 
 	@Override
 	public HospitalPage getAllHospital(int currentPage) {
+		currentPage= currentPage== 0 ? 1:currentPage;
 		return hospitalDao.getAllHospital(currentPage);
 	}
 

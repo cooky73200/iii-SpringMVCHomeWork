@@ -288,45 +288,46 @@
                 <div class="align-items-center justify-content-center pt-5 pb-5">
                     <h3 id="area-title" class="text-center font-weight-bold">修改獸醫院資料</h3>
                 </div>
-                
-                <form action="updatahospital">
+
+                <form action="updatahospital" method="post">
                     <div class="container">
                     <div class="mb-3">
+                     <input  name="hospitalId" type="hidden"  value="${hospital.hospitalId}" >
                       <label for="exampleInputEmail1" class="form-label">醫院名稱</label>
                       <div class="form-floating">
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name="hospitalName" type="text" value='${hospital.hospitalName}'class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">區域</label>
                       <div class="form-floating">
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name="area" type="text" value="${hospital.area}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">地址</label>
                       <div class="form-floating">
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name="address" type="text" value="${hospital.address}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">電話</label>
                       <div class="form-floating">
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name="tel" type="text"  value="${hospital.tel}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                     </div>
                     <button type="submit" class="btn btn-primary">確定修改</button>
-                    <a href="獸醫院管理.html" class="btn btn-primary">回上一頁</a>
+                    <a href="admin-pet-hospital.jsp" class="btn btn-primary">回上一頁</a>
                   </div>
                   </form>
-              
+
                   </div>
                 </div>
               </div>
               </div>
 
             </div>
-        </div> 
+        </div>
 
         <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-warning"></div>
 
@@ -338,7 +339,7 @@
         <!-- Read Information - Good to Share Starts -->
 
 
-        
+
         <!-- Read Information - Good to Share Ends -->
         <!-- <div id="gap" class="gap-lg-120 gap-md-50 gap-sm-10 gap-0 bg-danger"></div>
     </div> -->
@@ -361,7 +362,7 @@
             </footer>
         </div>
     </div>
-    
+
     <!-- Footer Ends -->
 
     <!-- Chatting Room Starts -->
@@ -372,7 +373,7 @@
     <!-- Back to Top Button Starts -->
 
     <!-- Back to Top Button Ends -->
-    
+
 </body>
 
 </html>

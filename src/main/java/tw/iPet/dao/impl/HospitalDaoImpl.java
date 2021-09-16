@@ -40,66 +40,59 @@ public class HospitalDaoImpl implements HospitalDao {
 	}
 
 	@Override
-	public boolean upHospital(Hospital hospital) {
-		String hql = "update Hospital p set " + " p.hospitalName = :hospitalName , " + " p.address = :address "
-				+ " p.area = :area " + " p.tel = :tel " + " where p.hospitalId = :id";
-		Query<Hospital> query = factory.getCurrentSession().createQuery(hql, Hospital.class);
-		query.setParameter("hospitalName", hospital.getHospitalName()).setParameter("address", hospital.getAddress())
-				.setParameter("area", hospital.getArea()).setParameter("area", hospital.getTel())
-				.setParameter("id", hospital.getHospitalId());
-		return (query.executeUpdate() > 0);
+	public void upHospital(Hospital hospital) {
+		factory.getCurrentSession().update(hospital);
 
 	}
 
 	@Override
 	public boolean delHospital(int id) {
-		String hql = " delete Hospital p where p.hospitalId = :id  ";
-		Query<Hospital> query = factory.getCurrentSession().createQuery(hql, Hospital.class);
+		String sql = "delete hospital where hospitalId = :id";
+		NativeQuery query = factory.getCurrentSession().createSQLQuery(sql);
 		query.setParameter("id", id);
-		return (query.executeUpdate() > 0);
+		return (query.executeUpdate()>0);
 
 	}
 
 	@Override
-	public HospitalPage selHospital(String keyWord,int currentPage) {
-		String hql = "FROM Hospital p WHERE p.area like :keyWord or p.hospitalName like :keyWord or p.tel like :keyWord";
+	public HospitalPage selHospital(String keyWord, int currentPage) {
+		System.out.println(keyWord);
+		String hql = "FROM Hospital p WHERE p.area like :keyWord or p.address like :keyWord or p.hospitalName like :keyWord or p.tel like :keyWord";
 		Query<Hospital> query = factory.getCurrentSession().createQuery(hql, Hospital.class);
-		query.setParameter("keyWord", "%" + "台北" + "%");
+		query.setParameter("keyWord", "%" + keyWord + "%");
 		List<Hospital> hospitalList = query.list();
 
-		return putInHospitalPage(hospitalList,currentPage);
+		return putInHospitalPage(hospitalList, currentPage);
 
 	}
-
-
 
 	@Override
 	public HospitalPage getAllHospital(int currentPage) {
-		String  hql = "from Hospital";
-		Query<Hospital> query = factory.getCurrentSession().createQuery(hql,Hospital.class);
+		String hql = "from Hospital";
+		Query<Hospital> query = factory.getCurrentSession().createQuery(hql, Hospital.class);
 		List<Hospital> hospitalList = query.list();
-		return putInHospitalPage(hospitalList,currentPage);
+		return putInHospitalPage(hospitalList, currentPage);
 
 	}
 
-	private HospitalPage putInHospitalPage(List<Hospital> hospitalList,int currentPage) {
+	private HospitalPage putInHospitalPage(List<Hospital> hospitalList, int currentPage) {
 		HospitalPage hPage = new HospitalPage();
 
 		hPage.setTotalCount(hospitalList.size());
 
 		int pageCount = hPage.getPageCount();
-		int page = hospitalList.size() % pageCount == 0
-				? hospitalList.size() / pageCount
+		int page = hospitalList.size() % pageCount == 0 ? hospitalList.size() / pageCount
 				: (hospitalList.size() / pageCount) + 1;
-		hPage.setPage(page);
+
+		hPage.setPage(page );
 
 		List<Hospital> currentHospital = new ArrayList<>();
-		int initCount = 25 *pageCount;
-		for(int i = 1 ;i<=pageCount;i++) {
-			if(initCount <=hospitalList.size()-1) {
+		int initCount = (currentPage-1) * pageCount;
+		for (int i = 1; i < pageCount; i++) {
+			if (initCount <= hospitalList.size() - 1) {
 				currentHospital.add(hospitalList.get(initCount));
 			}
-			initCount ++;
+			initCount++;
 		}
 		hPage.setHospitalList(currentHospital);
 
